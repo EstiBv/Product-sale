@@ -1,9 +1,15 @@
 import React from "react";
 import "../stylesheets/App.css";
-import Slides from "./Product-Slides";
+import FooterSlides from "./FooterProductSlides";
+import Slides from "./ProductSlides";
 
 const App = () => {
-  return <Slides />;
+  return (
+    <React.Fragment>
+      <Slides />
+      <FooterSlides />
+    </React.Fragment>
+  );
 };
 
 export default App;
