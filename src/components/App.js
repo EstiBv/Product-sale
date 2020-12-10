@@ -1,13 +1,11 @@
 import React from "react";
 import "../stylesheets/App.css";
-import FooterSlides from "./FooterProductSlides";
-import Slides from "./ProductSlides";
+import InterfaceSlides from "./slides/InterfaceSlides";
 
 const App = () => {
   return (
     <React.Fragment>
-      <Slides />
-      <FooterSlides />
+      <InterfaceSlides />
     </React.Fragment>
   );
 };

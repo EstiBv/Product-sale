@@ -1,0 +1,15 @@
+.slide-container {
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.slide {
+  scroll-snap-align: start;
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
