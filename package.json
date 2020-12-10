@@ -1,5 +1,6 @@
 {
-  "name": "boiler",
+  "name": "prueba-tecnica-ensayo",
+  "author": "estibaliz",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
