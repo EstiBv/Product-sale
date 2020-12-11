@@ -1,12 +1,18 @@
 .header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  position: fixed;
+  color: #ffffff;
+  &__nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   &__title {
     font-size: small;
   }
   &__btn {
+    background-color: #ffffff;
     border-style: none;
-    background-color: gray;
+    position: relative;
+    left: 100%;
   }
 }

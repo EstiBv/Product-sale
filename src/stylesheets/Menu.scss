@@ -1,0 +1,18 @@
+.menu-container {
+  height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__list {
+    list-style: none;
+  }
+  &__footer {
+    position: fixed;
+    bottom: 0;
+  }
+}
+.image3-sofaBlanco {
+  height: 200px;
+}
