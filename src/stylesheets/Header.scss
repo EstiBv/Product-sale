@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &__title {
+    font-size: small;
+  }
+  &__btn {
+    border-style: none;
+    background-color: gray;
+  }
+}

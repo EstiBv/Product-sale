@@ -4,14 +4,9 @@ import Product from "./Product";
 const InterfaceSlides = () => {
   return (
     <React.Fragment>
-      <main role="main" aria-label="products presentation">
-        <h5>mater</h5>
-        <button type="button" aria-label="close this slide">
-          burger
-        </button>
-        <button>Product Details</button>
-      </main>
-      <footer>
+      <button>Product Details</button>
+      <Product />
+      <div>
         <ul>
           <li>
             <p>01</p>
@@ -22,8 +17,7 @@ const InterfaceSlides = () => {
             <small>Forniture name</small>
           </li>
         </ul>
-      </footer>
-      <Product />
+      </div>
     </React.Fragment>
   );
 };
