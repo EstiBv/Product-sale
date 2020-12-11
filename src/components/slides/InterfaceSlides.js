@@ -1,7 +1,7 @@
 import React from "react";
 import Product from "./Product";
 
-const InterfaceSlides = () => {
+const InterfaceSlides = (props) => {
   return (
     <React.Fragment>
       <button>Product Details</button>

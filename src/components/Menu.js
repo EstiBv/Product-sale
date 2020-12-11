@@ -1,69 +1,46 @@
 import React from "react";
-import images3 from "./images/Sofa-blanco.png";
 import "../stylesheets/Menu.scss";
+import Collapsable from "./Collapsable";
+import Footer from "./Footer";
+// import Collapsable from "./Collapsable";
 
 const Menu = (props) => {
-  // listKeys
-  const itemsCollection = ["Furniture", "Lighthing", "Accesories"];
-  const listItems = itemsCollection.map((sectionName, i) => (
+  // Menu List
+  const menuList = ["Collection", "Design", "Crafmanship", "Ethics"];
+  const menuListItems = menuList.map((sectionMenu, i) => (
+    <li key={i}>{sectionMenu}</li>
+  ));
+
+  // Menu Collapsable
+  const itemsCollapsable = ["Furniture", "Lighthing", "Accesories"];
+  const listItemsCollapsable = itemsCollapsable.map((sectionName, i) => (
     <li key={i}>{sectionName}</li>
   ));
 
-  // lifting
-  const handleClickList = () => {
-    props.handleClickList();
-    console.log("hola", listItems.i);
+  // const renderCollapsable = () => {
+  //   return <Collapsable />;
+  // };
+
+  // Event:Lifting
+  const handleClickList = (ev) => {
+    const activeCollapsable = ev.currentTarget.id;
+    // props.handleClickList(renderCollapsable());
+    props.handleClickList(console.log("escucha-hija", activeCollapsable));
   };
 
   return (
     <>
       <div className="menu-container">
-        <section
+        <ul
+          itemscollapsable={listItemsCollapsable}
           aria-label="areas list"
           className="menu-container__list-collapsable"
+          onClick={handleClickList}
         >
-          <ul className="menu-container__list" onClick={handleClickList}>
-            {" "}
-            Collection
-            {listItems}
-          </ul>
-          <img
-            src={images3}
-            alt="sofa blanco individual"
-            className="image3-sofaBlanco"
-          />
-
-          {/* <ul className="menu-container__list" onClick={handleClickList}>
-            Collection
-            <li>
-              Furniture
-              <div>
-               
-            </li>
-            <li>Lighthing</li>
-            <li>Accesories</li>
-          </ul> */}
-          <ul>Design</ul>
-          <ul>Crafmanship</ul>
-          <ul>Ethics</ul>
-        </section>
-        <footer className="menu-container__footer">
-          <table>
-            <thead>
-              <tr>
-                <td>About</td>
-                <td>Contact</td>
-                <td>Dealers</td>
-              </tr>
-              <tr>
-                <td>News</td>
-                <td>Care</td>
-                <td>Press</td>
-              </tr>
-            </thead>
-          </table>
-        </footer>
+          {menuListItems}
+        </ul>
       </div>
+      <Footer />
     </>
   );
 };
