@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Collection",
+    "type": ["Furniture", "Lignthing", "Accessories"],
+    "model": [
+      {
+        "id": 1,
+        "author": "Michael,W.Dreeben",
+        "name": "Shell Dining Chair",
+        "description": "Lorem fistrum a peich labore a wan. Pecador la gloria de mi madre veniam incididunt ese que llega"
+      },
+      {
+        "id": 2,
+        "author": "Jeaper K.Thomas",
+        "name": "Dunes Anthrazite Black",
+        "description": "Lorem fistrum a peich labore a wan. Pecador exercitation ullamco velit por la gloria de mi madre ven",
+        "img": "./images/Mesa-negra.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Desing"
+  },
+  {
+    "id": 3,
+    "name": "Crafmanship"
+  },
+  {
+    "id": 4,
+    "name": "Ethics"
+  }
+]

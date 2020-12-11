@@ -2,6 +2,9 @@ import React from "react";
 import Product from "./Product";
 
 const InterfaceSlides = (props) => {
+  // Recorrer array data y pasar por props los datos a <Producto>
+  // const characteristProducts= props.data.map(())
+
   return (
     <React.Fragment>
       <button>Product Details</button>

@@ -2,7 +2,7 @@ import React from "react";
 import images1 from "../images/Silla-negra.png";
 import images2 from "../images/Mesa-negra.png";
 
-const Product = () => {
+const Product = (props) => {
   return (
     <section aria-label="content-info" className="slide-container">
       <div className="slide">
