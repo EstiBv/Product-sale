@@ -1,7 +1,6 @@
 [
   {
-    "id": 1,
-    "name": "Collection",
+    "names": ["Collection", "Desing", "Crafmanship", "Ethics"],
     "type": ["Furniture", "Lignthing", "Accessories"],
     "model": [
       {
@@ -14,21 +13,8 @@
         "id": 2,
         "author": "Jeaper K.Thomas",
         "name": "Dunes Anthrazite Black",
-        "description": "Lorem fistrum a peich labore a wan. Pecador exercitation ullamco velit por la gloria de mi madre ven",
-        "img": "./images/Mesa-negra.png"
+        "description": "Lorem fistrum a peich labore a wan. Pecador exercitation ullamco velit por la gloria de mi madre ven"
       }
     ]
-  },
-  {
-    "id": 2,
-    "name": "Desing"
-  },
-  {
-    "id": 3,
-    "name": "Crafmanship"
-  },
-  {
-    "id": 4,
-    "name": "Ethics"
   }
 ]

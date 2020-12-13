@@ -1,12 +1,13 @@
 import React from "react";
 import images1 from "../images/Silla-negra.png";
 import images2 from "../images/Mesa-negra.png";
+import "../../stylesheets/App.scss";
 
 const Product = (props) => {
   return (
     <section aria-label="content-info" className="slide-container">
       <div className="slide">
-        <article aria-label="product general description">
+        <article aria-label="product general description" id="1">
           <small>autor</small>
           <h4>Forniture name</h4>
           <p>
@@ -18,7 +19,7 @@ const Product = (props) => {
         </article>
       </div>
       <div className="slide">
-        <article aria-label="product general description">
+        <article aria-label="product general description" id="2">
           <small>autor</small>
           <h4>Forniture name</h4>
           <p>

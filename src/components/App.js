@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Data from "./data/Data.json";
 import "../stylesheets/App.scss";
 import Header from "./Header";
@@ -8,24 +8,34 @@ import { Route, Switch } from "react-router";
 import { useState } from "react";
 
 const App = () => {
-  // State Collapsable
+  // State
+  // Adjuntar login
   const [data, setData] = useState({});
-  const [collapsableIsOpen, setCollapsableIsOpen] = useState(false);
 
-  // Event
-  const handleClickList = (clicked) => {
-    if (clicked) {
-      setCollapsableIsOpen(true);
-    } else {
-      setCollapsableIsOpen(false);
-    }
-    console.log("no pinto");
-    console.log({ Data });
-  };
+  // Component Did Mount, añadir Loader
+  useEffect(() => {
+    setData(Data);
+  }, []);
 
   // render
   const renderProducts = () => {
-    return <InterfaceSlides data={Data} />;
+    const dataForProduct = [];
+    const dataFromProducts = Data.map((data) => {
+      return data.model.push(dataForProduct);
+    });
+
+    console.log(dataFromProducts);
+    if (dataFromProducts) {
+      return (
+        <InterfaceSlides
+          products={renderProducts}
+          id={dataFromProducts.id}
+          name={dataFromProducts.name}
+          author={dataFromProducts.author}
+          description={dataFromProducts.description}
+        />
+      );
+    }
   };
 
   return (
@@ -34,13 +44,9 @@ const App = () => {
       <main role="main" aria-label="products presentation">
         <Switch>
           <Route exact path="/">
-            <Menu
-              handleClickList={handleClickList}
-              collapsable={collapsableIsOpen}
-              data={Data}
-            />
+            <Menu data={data} />
           </Route>
-          <Route path="/products/" component={renderProducts} />
+          <Route path="/products/:id" component={renderProducts} />
         </Switch>
       </main>
     </React.Fragment>

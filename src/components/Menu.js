@@ -1,36 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import "../stylesheets/Menu.scss";
-import Collapsable from "./Collapsable";
+import Submenu from "./Submenu";
 import Footer from "./Footer";
 
-const Menu = (props) => {
-  // List Menu
-  const menuList = ["Collection", "Design", "Crafmanship", "Ethics"];
-  const menuListItems = menuList.map((sectionMenu, i) => (
-    <li key={i}>{sectionMenu}</li>
-  ));
+const Menu = () => {
+  // State
+  const [collapsableIsOpen, setCollapsableIsOpen] = useState(true);
+  // const openList = collapsableIsOpen ? "js-collapsed" : " ";
 
-  // Event:Lifting
-  const handleClickList = (ev) => {
-    const activeCollapsable = ev.currentTarget;
-    props.handleClickList(console.log("escucha-hija", activeCollapsable));
+  // Event
+  const handleCollapsable = () => {
+    setCollapsableIsOpen(!collapsableIsOpen);
   };
 
-  const openList = props.collapsableIsOpen === false ? "" : "js-collapsed";
-  console.log(openList);
+  // <div className={openList}>{/* <Submenu /> */}</div>
   return (
     <>
       <div className="menu-container">
         <ul
           aria-label="areas list"
           className="menu-container__list-collapsable"
-          onClick={handleClickList}
         >
-          {menuListItems}
-          <div className={openList}>
-            {/* <Collapsable /> */}
-            {props.collapsable === !false ? <Collapsable /> : null}
+          <div onClick={handleCollapsable}>
+            <li className="menuList">
+              Collection
+              {collapsableIsOpen ? null : <Submenu />}
+            </li>
           </div>
+          <li className="menuList">Design</li>
+          <li className="menuList">Crafmanship</li>
+          <li className="menuList">Ethics</li>
         </ul>
       </div>
       <Footer />

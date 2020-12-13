@@ -9,7 +9,7 @@ const Header = () => {
         <Link to="/">
           <h1 className="header__title">mater</h1>
         </Link>
-        <Link to="/products/">
+        <Link to="/products/:id">
           <button
             type="button"
             aria-label="close this slide"
