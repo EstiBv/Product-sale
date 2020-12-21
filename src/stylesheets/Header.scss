@@ -15,7 +15,22 @@
     position: relative;
     left: 100%;
   }
-  &__btn:hover {
-    color: red;
-  }
+  // &__btn:hover {
+  //   color: red;
+  //   transform-origin: left center;
+  //   transform: rotate(45deg);
+  // }
+}
+
+.burguer {
+}
+.burguer:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+  transform: rotate(45deg);
+}
+.burguer:nth-child(2) {
+  top: 18px;
+  transform-origin: left center;
+  transform: rotate(90deg);
 }

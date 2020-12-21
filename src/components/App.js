@@ -1,38 +1,33 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Data from "./data/Data.json";
 import "../stylesheets/App.scss";
 import Header from "./Header";
-import Menu from "./Menu";
-import InterfaceSlides from "../components/slides/InterfaceSlides";
+import Menu from "./slide02/Menu";
+import InterfaceSlides from "./slide01/InterfaceSlides";
 import { Route, Switch } from "react-router";
-import { useState } from "react";
+// import { useState } from "react";
 
 const App = () => {
-  // State
-  // Adjuntar login
-  const [data, setData] = useState({});
+  // State : Add Loader
+  // const [data, setData] = useState({});
 
-  // Component Did Mount, añadir Loader
-  useEffect(() => {
-    setData(Data);
-  }, []);
+  // Add Loader
+  // useEffect(() => {
+  //   setData(Data);
+  // }, []);
 
   // render
   const renderProducts = () => {
-    const dataForProduct = [];
-    const dataFromProducts = Data.map((data) => {
-      return data.model.push(dataForProduct);
+    const dataFromProducts = Data.map((item) => {
+      return item;
+    }).map((model) => {
+      return model.model;
     });
-
-    console.log(dataFromProducts);
     if (dataFromProducts) {
       return (
         <InterfaceSlides
           products={renderProducts}
-          id={dataFromProducts.id}
-          name={dataFromProducts.name}
-          author={dataFromProducts.author}
-          description={dataFromProducts.description}
+          dataProducts={dataFromProducts}
         />
       );
     }
@@ -43,10 +38,10 @@ const App = () => {
       <Header />
       <main role="main" aria-label="products presentation">
         <Switch>
-          <Route exact path="/">
-            <Menu data={data} />
+          <Route path="/products">
+            <Menu data={Data} />
           </Route>
-          <Route path="/products/:id" component={renderProducts} />
+          <Route exact path="/" component={renderProducts} />
         </Switch>
       </main>
     </React.Fragment>

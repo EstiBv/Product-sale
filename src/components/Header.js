@@ -9,7 +9,11 @@ const Header = () => {
         <Link to="/">
           <h1 className="header__title">mater</h1>
         </Link>
-        <Link to="/products/:id">
+        <Link to="/products/">
+          <div id="burguer" className="burguer">
+            <span></span>
+            <span></span>
+          </div>
           <button
             type="button"
             aria-label="close this slide"
