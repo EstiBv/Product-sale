@@ -2,6 +2,7 @@ import React from "react";
 import Product from "./Product";
 import NavFooter from "./NavFooter";
 import "../../stylesheets/App.scss";
+import PropTypes from "prop-types";
 
 const InterfaceSlides = (props) => {
   const contentInfoProfucts = props.dataProducts.map((infoProducts, i) => {
@@ -23,5 +24,10 @@ const InterfaceSlides = (props) => {
       <NavFooter dataLinks={props.dataProducts} />
     </React.Fragment>
   );
+};
+
+InterfaceSlides.protoTypes = {
+  dataLinks: PropTypes.array.isRequired,
+  contentInfoProfucts: PropTypes.array.isRequired,
 };
 export default InterfaceSlides;

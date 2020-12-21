@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../../stylesheets/Menu.scss";
 import Submenu from "../slide02/Submenu";
 import Footer from "../slide02/Footer";
+import PropTypes from "prop-types";
 
 const Menu = (props) => {
   const names = props.data.map((b) => {
@@ -51,6 +52,11 @@ const Menu = (props) => {
       <Footer />
     </>
   );
+};
+
+Menu.protoTypes = {
+  names: PropTypes.array.isRequired,
+  types: PropTypes.array.isRequired,
 };
 
 export default Menu;

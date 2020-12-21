@@ -8,7 +8,7 @@ const Submenu = (props) => {
   });
 
   const imgSubMenuIsOpen = { images3 } ? "" : " subMenu__img";
-  console.log(imgSubMenuIsOpen);
+
   return (
     <>
       <ul>
