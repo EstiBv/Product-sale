@@ -1,36 +1,40 @@
 .header {
-  position: fixed;
-  color: #ffffff;
-  &__nav-container {
+  width: 100vw;
+  font-family: Helvetica, sans-serif;
+  &__nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 20px 10px 0px 10px;
+    &--mater {
+      color: #000000;
+      text-decoration: none;
+    }
+    &--burguer-btn {
+      background-color: #ffffff;
+      border-style: none;
+    }
   }
   &__title {
     font-size: small;
   }
-  &__btn {
-    background-color: #ffffff;
-    border-style: none;
-    position: relative;
-    left: 100%;
-  }
-  // &__btn:hover {
-  //   color: red;
-  //   transform-origin: left center;
-  //   transform: rotate(45deg);
-  // }
 }
-
+.div1.div2 {
+}
 .burguer {
+  height: 2px;
+  background-color: black;
 }
-.burguer:nth-child(1) {
-  top: 0px;
-  transform-origin: left center;
-  transform: rotate(45deg);
-}
-.burguer:nth-child(2) {
-  top: 18px;
-  transform-origin: left center;
-  transform: rotate(90deg);
-}
+// .burguer:nth-child() {
+//   background-color: black;
+//   top: 0px;
+//   transform-origin: left center;
+//   transform: rotate(45deg);
+// }
+// .burguer:nth-child() {
+//   height: 2px;
+//   background-color: black;
+//   top: 18px;
+//   transform-origin: left center;
+//   transform: rotate(90deg);
+// }
