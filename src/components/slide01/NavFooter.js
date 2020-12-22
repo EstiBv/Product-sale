@@ -6,11 +6,11 @@ const NavFooter = () => {
 
   return (
     <nav className="footer-nav">
-      <a href="0">
+      <a href="0" className="footer-nav0">
         01
         <small>Shell Dining Chair</small>
       </a>
-      <a href="1">
+      <a href="1" className="footer-nav1">
         02
         <small>Dunes Anthrazite Black</small>
       </a>

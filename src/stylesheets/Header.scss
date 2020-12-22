@@ -1,6 +1,7 @@
 .header {
   width: 100vw;
   font-family: Helvetica, sans-serif;
+  position: fixed;
   &__nav {
     display: flex;
     flex-direction: row;
@@ -19,6 +20,12 @@
     font-size: small;
   }
 }
+
+// Mediaqueries
+
+// @media all and (min-width: 768px) {
+// }
+
 .div1.div2 {
 }
 .burguer {
