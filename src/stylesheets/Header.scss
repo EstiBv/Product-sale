@@ -11,9 +11,14 @@
       color: #000000;
       text-decoration: none;
     }
+
     &--burguer-btn {
+      height: 30px;
+      width: 30px;
+      border-color: #888787;
+      border-style: solid;
+      border-width: 0.5px;
       background-color: #ffffff;
-      border-style: none;
     }
   }
   &__title {
@@ -26,22 +31,26 @@
 // @media all and (min-width: 768px) {
 // }
 
-.div1.div2 {
+.menu_on {
+  // height: 1px;
+  // width: 20px;
+  // background-color: black;
+  // display: inline-block;
+  // position: relative;
 }
-.burguer {
-  height: 2px;
+.div1,
+.div2 {
+  height: 1px;
+  width: 20px;
   background-color: black;
+  display: inline-block;
+  position: relative;
+  text-align: center;
 }
-// .burguer:nth-child() {
-//   background-color: black;
-//   top: 0px;
-//   transform-origin: left center;
-//   transform: rotate(45deg);
-// }
-// .burguer:nth-child() {
-//   height: 2px;
-//   background-color: black;
-//   top: 18px;
-//   transform-origin: left center;
-//   transform: rotate(90deg);
-// }
+.div2 {
+  margin-bottom: 10px;
+}
+.div:nth-child(1) {
+}
+.burguer:nth-child(2) {
+}

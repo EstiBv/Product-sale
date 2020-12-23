@@ -1,6 +1,6 @@
 .menu-container {
-  height: 100vh;
   background-color: #000000;
+  height: 100vh;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -17,6 +17,9 @@
 .js-collapsed {
   display: none;
 }
+.menuList {
+  transition: all 0.3s ease;
+}
 .menuList:hover {
-  opacity: 0.7;
+  transform: scale(0.9);
 }

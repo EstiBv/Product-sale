@@ -26,15 +26,15 @@ const Menu = (props) => {
   // <div className={openList}>{/* <Submenu /> */}</div>
   return (
     <>
-      <div className="menu-container">
+      <section className="menu-container">
         <ul
           aria-label="areas list"
           className="menu-container__list "
           onClick={handleCollapsable}
         >
-          <div>
-            <li className="menuList">
-              {names[0][0]}
+          <li className="menuList">
+            {names[0][0]}
+            <div className="menuList__collapsable">
               {collapsableIsOpen ? null : (
                 <Submenu
                   types={props.data}
@@ -42,13 +42,13 @@ const Menu = (props) => {
                   // state={subMenuIsOpen}
                 />
               )}
-            </li>
-          </div>
+            </div>
+          </li>
           <li className="menuList">{names[0][1]}</li>
           <li className="menuList">{names[0][2]}</li>
           <li className="menuList">{names[0][3]}</li>
         </ul>
-      </div>
+      </section>
       <Footer />
     </>
   );

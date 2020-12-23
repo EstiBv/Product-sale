@@ -56,6 +56,7 @@
 
 // MediaQueries
 @media all and (min-width: 768px) {
+  // márgenes en Mediaqueries
   .container {
     flex-direction: column;
     padding: 0px 75px 10px 75px;
@@ -71,13 +72,6 @@
         height: 300px;
       }
     }
-  }
-  .btn-detail {
-    bottom: 30%;
-    margin-left: 75px;
-  }
-  .footer-nav {
-    text-align: left;
   }
 }
 // @media all and (min-width: 1024px){}

@@ -3,6 +3,10 @@ import images3 from "../images/Sofa-blanco.png";
 import "../../stylesheets/SubMenu.scss";
 
 const Submenu = (props) => {
+  /*
+handleClick y ternario para pintar componente Imagen.https://medium.com/@teffcode/c%C3%B3mo-hacer-animaciones-con-scroll-usando-react-js-a157755b2a1 
+*/
+
   const types = props.types.map((b) => {
     return b.type;
   });

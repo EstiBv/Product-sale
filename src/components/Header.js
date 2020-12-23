@@ -15,11 +15,10 @@ const Header = () => {
             aria-label="close this slide"
             className="header__nav--burguer-btn"
           >
-            <div id="burguer" className="burguer">
+            <div id="burguer" className="menu_on">
               <span className="div1"></span>
               <span className="div2"></span>
             </div>
-            Burger
           </button>
         </Link>
       </nav>

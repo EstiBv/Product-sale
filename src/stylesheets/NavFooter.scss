@@ -17,3 +17,9 @@
   text-decoration: none;
   color: #888787;
 }
+
+@media all and (min-width: 768px) {
+  .footer-nav {
+    text-align: left;
+  }
+}
