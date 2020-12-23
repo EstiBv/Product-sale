@@ -1,12 +1,12 @@
 .header {
   width: 100vw;
   font-family: Helvetica, sans-serif;
-  position: fixed;
+  position: relative;
   &__nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 10px 0px 10px;
+    padding: 20px 30px 0px 30px;
     &--mater {
       color: #000000;
       text-decoration: none;

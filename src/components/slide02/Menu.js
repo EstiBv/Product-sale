@@ -29,7 +29,7 @@ const Menu = (props) => {
       <div className="menu-container">
         <ul
           aria-label="areas list"
-          className="menu-container__list-collapsable menuList"
+          className="menu-container__list "
           onClick={handleCollapsable}
         >
           <div>

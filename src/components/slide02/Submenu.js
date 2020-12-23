@@ -7,23 +7,23 @@ const Submenu = (props) => {
     return b.type;
   });
 
-  const imgSubMenuIsOpen = { images3 } ? "" : " subMenu__img";
+  const imgSubMenuIsOpen = { images3 } ? "hidden" : " hidden";
 
   return (
     <>
-      <ul>
-        <li className="subMenu">
+      <ul className="subMenu">
+        <li className="subMenu__item">
           {types[0][0]}
-          <div className={imgSubMenuIsOpen}>
+          <div className={"SubMenu__image " + imgSubMenuIsOpen}>
             <img
               src={images3}
               alt="sofa blanco individual"
-              className={"image3-sofaBlanco"}
+              className="image "
             />
           </div>
         </li>
-        <li className="subMenu">{types[0][1]}</li>
-        <li className="subMenu">{types[0][2]}</li>
+        <li className="subMenu__item">{types[0][1]}</li>
+        <li className="subMenu__item">{types[0][2]}</li>
       </ul>
     </>
   );

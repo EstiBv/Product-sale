@@ -1,0 +1,19 @@
+// Footer Slide01
+.footer-nav {
+  width: 100vw;
+  height: 7%;
+  background-color: #f1f1f1;
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer-nav0,
+.footer-nav1 {
+  font-size: 14px;
+  text-decoration: none;
+  color: #888787;
+}

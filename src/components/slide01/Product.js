@@ -4,7 +4,12 @@ import "../../stylesheets/Product.scss";
 const Product = (props) => {
   const eachProduct = props.infoProducts.map((a, i) => {
     return (
-      <section aria-label=" content-info" key={a.id} id={i}>
+      <section
+        aria-label=" content-info"
+        key={a.id}
+        id={i}
+        className="container-general"
+      >
         <div className="slide container">
           <article
             aria-label="slide__product-description"

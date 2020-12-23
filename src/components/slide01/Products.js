@@ -2,9 +2,10 @@ import React from "react";
 import Product from "./Product";
 import NavFooter from "./NavFooter";
 import "../../stylesheets/App.scss";
+import "../../stylesheets/Products.scss";
 import PropTypes from "prop-types";
 
-const InterfaceSlides = (props) => {
+const Products = (props) => {
   const contentInfoProfucts = props.dataProducts.map((infoProducts, i) => {
     return (
       <li key={i}>
@@ -26,8 +27,8 @@ const InterfaceSlides = (props) => {
   );
 };
 
-InterfaceSlides.protoTypes = {
+Products.protoTypes = {
   dataLinks: PropTypes.array.isRequired,
   contentInfoProfucts: PropTypes.array.isRequired,
 };
-export default InterfaceSlides;
+export default Products;

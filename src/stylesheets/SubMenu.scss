@@ -1,16 +1,24 @@
-.image3-sofaBlanco {
+.image {
   height: 200px;
+  position: relative;
+  transform: translateX(175%);
 }
 
 .subMenu {
-  //   &_subMenu:hover {
-  //     opacity: 1;
-  //   }
+  color: #888787;
+  font-size: 12px;
+  list-style: none;
+  display: grid;
+  grid-gap: 20px;
+  margin: 20px 0px 20px 0px;
+  &__image {
+    display: flex;
+  }
+  &__item:hover {
+    color: white;
+    opacity: 1;
+  }
 }
-.subMenu:hover {
-  color: blue;
-  opacity: 1;
-}
-.subMenu__img {
+.hidden {
   display: none;
 }

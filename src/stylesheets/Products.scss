@@ -1,0 +1,32 @@
+// Scroll
+.slide {
+  scroll-snap-align: start;
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.slide-container {
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+// Button: Product Detail
+.bloque-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btn-detail {
+  border: 0px;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 3px;
+  padding: 5px 5px 5px 5px;
+  position: fixed;
+  bottom: 45%;
+  margin-left: 30px;
+}

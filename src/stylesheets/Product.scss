@@ -9,53 +9,49 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    &--text-author {
+      color: #888787;
+      font-size: 10px;
+    }
+    &--text-name {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    &--text-paragraph {
+      margin-top: 50px;
+      color: #888787;
+      font-size: 14px;
+    }
     &--imgProduct {
       align-self: flex-end;
     }
     &--img {
-      margin-top: 50px;
       height: 200px;
-    }
-    &--text-paragraph {
-      color: #888787;
     }
   }
 }
 
-// BTN : Product Detail
-.bloque-btn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+// Inital transparence
+.container-general {
+  -webkit-animation-name: visible;
+  animation-name: visible;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
-.btn-detail {
-  border: 0px;
-  color: #ffffff;
-  background-color: #000000;
-  border-radius: 3px;
-  padding: 5px 5px 5px 5px;
-  position: fixed;
-  bottom: 40%;
-  margin-left: 30px;
-}
-
-// Footer
-.footer-nav {
-  width: 100vw;
-  height: 7%;
-  background-color: #f1f1f1;
-  position: fixed;
-  bottom: 0px;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-.footer-nav0,
-.footer-nav1 {
-  text-decoration: none;
-  color: #000000;
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 // MediaQueries
@@ -77,7 +73,7 @@
     }
   }
   .btn-detail {
-    bottom: 35%;
+    bottom: 30%;
     margin-left: 75px;
   }
   .footer-nav {
@@ -86,18 +82,14 @@
 }
 // @media all and (min-width: 1024px){}
 
-// Scroll
-.slide {
-  scroll-snap-align: start;
-  min-width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-}
-.slide-container {
-  -ms-scroll-snap-type: y mandatory;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  display: flex;
-  flex-direction: column;
+@-webkit-keyframes visible {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
 }
