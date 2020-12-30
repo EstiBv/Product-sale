@@ -5,23 +5,8 @@ import Header from "./Header";
 import Menu from "./slide02/Menu";
 import Products from "./slide01/Products";
 import { Route, Switch } from "react-router";
-// import { useState } from "react";
 
 const App = () => {
-  // State : Add Loader
-  // const [data, setData] = useState({});
-  // const [scroll, setScroll] = useState("hidden");
-
-  // Add Loader
-  // useEffect(() => {
-  //   setData(Data);
-  // }, []);
-
-  // event
-  // const handleScroll = () => {
-  //   setScroll("visible");
-  // };
-
   // render
   const renderProducts = () => {
     const dataFromProducts = Data.map((item) => {

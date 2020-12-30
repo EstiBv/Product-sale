@@ -7,14 +7,18 @@ const NavFooter = () => {
 
   return (
     <nav className="footer-nav">
-      <a href="0" className="footer-nav0">
-        01
-        <small> Shell Dining Chair</small>
-      </a>
-      <a href="1" className="footer-nav1">
-        02
-        <small> Dunes Anthrazite Black</small>
-      </a>
+      <div className="footer-nav__container0">
+        <a href="0" className="footer-nav0">
+          01
+          <small> Shell Dining Chair</small>
+        </a>
+      </div>
+      <div className="footer-nav__container1">
+        <a href="1" className="footer-nav1">
+          02
+          <small> Dunes Anthrazite Black</small>
+        </a>
+      </div>
     </nav>
   );
 };

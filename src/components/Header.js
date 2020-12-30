@@ -9,17 +9,12 @@ const Header = () => {
         <Link to="/" className="header__nav--mater">
           <h1 className="header__title">Mater</h1>
         </Link>
+
         <Link to="/home/" className="header__nav--burguer">
-          <button
-            type="button"
-            aria-label="close this slide"
-            className="header__nav--burguer-btn"
-          >
-            <div id="burguer" className="menu_on">
-              <span className="div1"></span>
-              <span className="div2"></span>
-            </div>
-          </button>
+          <div id="burguer" className="header__nav--burguer-container">
+            <span className="div1"></span>
+            <span className="div2"></span>
+          </div>
         </Link>
       </nav>
     </header>

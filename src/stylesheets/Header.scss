@@ -1,7 +1,15 @@
+/*
+Descomentado el componente Product se queda perfect. 
+ Comentado : .header y burguer + Header.js el Link. 
+ 
+*/
+
 .header {
   width: 100vw;
   font-family: Helvetica, sans-serif;
-  position: relative;
+  position: absolute;
+  top: 0;
+
   &__nav {
     display: flex;
     flex-direction: row;
@@ -10,19 +18,42 @@
     &--mater {
       color: #000000;
       text-decoration: none;
+      z-index: 2;
     }
-
-    &--burguer-btn {
+    &--burguer {
+      z-index: 2;
+      padding-left: 2.5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       height: 30px;
       width: 30px;
-      border-color: #888787;
-      border-style: solid;
-      border-width: 0.5px;
+      border: 0.5px solid #000000;
       background-color: #ffffff;
+      border-radius: 2px;
     }
   }
   &__title {
     font-size: small;
+  }
+}
+
+.header__nav--burguer:hover {
+  border: 0.5px solid #888787;
+  .div1 {
+    background-color: #888787;
+    border-radius: 2px;
+    transition: 300ms ease-in-out;
+    transform: rotate(43deg);
+    left: 5%;
+  }
+  .div2 {
+    background-color: #888787;
+    border-radius: 2px;
+    transition: 300ms ease-in-out;
+    bottom: 22.5%;
+    left: 1px;
+    transform: rotate(-45deg);
   }
 }
 
@@ -31,13 +62,15 @@
 // @media all and (min-width: 768px) {
 // }
 
-.menu_on {
-  // height: 1px;
-  // width: 20px;
-  // background-color: black;
-  // display: inline-block;
-  // position: relative;
-}
+// .menu_on {
+// height: 1px;
+// width: 20px;
+// background-color: black;
+// display: inline-block;
+// position: relative;
+// }
+
+// burguer
 .div1,
 .div2 {
   height: 1px;
@@ -45,12 +78,7 @@
   background-color: black;
   display: inline-block;
   position: relative;
-  text-align: center;
 }
 .div2 {
   margin-bottom: 10px;
-}
-.div:nth-child(1) {
-}
-.burguer:nth-child(2) {
 }

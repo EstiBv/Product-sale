@@ -10,6 +10,24 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  &__container0:hover {
+    width: 20%;
+    transition: 300ms ease-in-out;
+    border: 0.5px solid black;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 1.5em;
+  }
+  &__container1:hover {
+    width: 20%;
+    transition: 300ms ease-in-out;
+    border: 0.5px solid black;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 1.5em;
+  }
 }
 .footer-nav0,
 .footer-nav1 {
