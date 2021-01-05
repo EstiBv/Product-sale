@@ -2,7 +2,7 @@
 # 🛍 + 💻 `Product Sales`
 ---
 
-**`👩🏽‍💻 Hace 6 meses tuve una oportunidad laboral que me gustaba, me mandaron la prueba técnica y no tenía ni idea, me di cuenta del gran recorrido que tenía por delante 🤦🏽‍♀️`**
+**`👩🏽‍💻 Hace 6 meses tuve una oportunidad laboral que me gustaba un montón, pero me mandaron una prueba técnica y no tenía NI IDEA (sólo había investigado un poquito en html y jugado con processing... el resto era totalmente desconocido) pero estuve hasta el momento de la entrega investigando para ver qué era capaz de conseguir sin tener ni la mas remota idea. Me di cuenta del gran recorrido que tenía por delante y aunque me focalicé en aprender desarrollo web, en aquel momento me agobió un poquito reconocer todo lo que tenía por delante. Ahora me alegra saber que el camino es infinito y disfruto del proceso 🗺`**
 
 💪 La he retomado y finalmente lo he conseguido ✌
 
@@ -57,6 +57,8 @@ _(Adjunar imgs)_
 - A mejorar
 
   - Complementar mi organización por Sprints mediante trello o projects.
+
+--
 
 📝 Conclusión
 _He disfrutado el proceso de desarrollo, terminé el bootCamp y decidí realizarlo con calma, eso ha facilitado mayor profundización y dedicación para superar retos y experimentar para aprender, sin embargo me despisté para organizarme por Sprints y creo así hubiese tenido mayor fluidez tanto para el proceso como en los momentos de atasco, y queda anotado para_ _`seguir fallando, pero fallando mejor`_
