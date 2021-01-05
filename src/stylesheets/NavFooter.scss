@@ -13,20 +13,24 @@
   &__container0:hover {
     width: 20%;
     transition: 300ms ease-in-out;
-    border: 0.5px solid black;
+    border: 0.5px solid #888787;
     border-bottom: none;
     border-left: none;
     border-right: none;
-    padding-top: 1.5em;
+    padding-top: 1em;
+    text-align: center;
+    padding-bottom: 10px;
   }
   &__container1:hover {
     width: 20%;
     transition: 300ms ease-in-out;
-    border: 0.5px solid black;
+    border: 0.5px solid #888787;
     border-bottom: none;
     border-left: none;
     border-right: none;
-    padding-top: 1.5em;
+    padding-top: 1em;
+    text-align: center;
+    padding-bottom: 10px;
   }
 }
 .footer-nav0,
