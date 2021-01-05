@@ -2,9 +2,9 @@
 # 🛍 + 💻 `Product Sales`
 ---
 
-**`👩🏽‍💻Tuve una prueba ténica para una beca UI antes de profundizar en la programación, tenía breves nociones y gracias a esta experiencia fui consciente de todas mis carencias. 🤦🏽‍♀️`**
+**`👩🏽‍💻 Hace 6 meses tuve una oportunidad laboral que me gustaba, me mandaron la prueba técnica y no tenía ni idea, me di cuenta del gran recorrido que tenía por delante 🤦🏽‍♀️`**
 
-💪 He retomado una prueba técnica que no fui capaz realizar hace 6 meses y finalmente lo he conseguido ✌
+💪 La he retomado y finalmente lo he conseguido ✌
 
 #### 🚀 Prueba técnica
 
