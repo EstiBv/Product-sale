@@ -11,12 +11,12 @@ handleClick y ternario para pintar componente Imagen.https://medium.com/@teffcod
     return b.type;
   });
 
-  const imgSubMenuIsOpen = { images3 } ? "hidden" : " hidden";
+  const imgSubMenuIsOpen = { images3 } ? "hidden" : " ";
 
   return (
     <>
       <ul className="subMenu">
-        <li className="subMenu__item">
+        <li className="subMenu__item liImage">
           {types[0][0]}
           <div className={"SubMenu__image " + imgSubMenuIsOpen}>
             <img

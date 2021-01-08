@@ -11,7 +11,7 @@ const Menu = (props) => {
 
   // State
   const [collapsableIsOpen, setCollapsableIsOpen] = useState(true);
-  // const [subMenuIsOpen, setSubMenuIsOpen] = useState(true);
+  // const [subMenuIsHover, setSubMenuIsHover] = useState(true);
   // const openList = collapsableIsOpen ? "js-collapsed" : " ";
 
   // Event
@@ -35,13 +35,7 @@ const Menu = (props) => {
           <li className="menuList">
             {names[0][0]}
             <div className="menuList__collapsable">
-              {collapsableIsOpen ? null : (
-                <Submenu
-                  types={props.data}
-                  // handleSubMenu={handleSubMenu}
-                  // state={subMenuIsOpen}
-                />
-              )}
+              {collapsableIsOpen ? null : <Submenu types={props.data} />}
             </div>
           </li>
           <li className="menuList">{names[0][1]}</li>

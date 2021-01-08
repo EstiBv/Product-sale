@@ -2,9 +2,11 @@
   height: 200px;
   position: relative;
   transform: translateX(175%);
+  z-index: 3;
 }
 
 .subMenu {
+  z-index: 2;
   color: #888787;
   font-size: 12px;
   list-style: none;
@@ -18,7 +20,42 @@
     color: white;
     opacity: 1;
   }
+  -webkit-animation-name: visible;
+  animation-name: visible;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  @-webkit-keyframes visible {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes visible {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
+
 .hidden {
   display: none;
+}
+
+.subMenu {
 }
